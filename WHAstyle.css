@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;  
+    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: rgb(71, 71, 71) url(links/link-img/steins.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+a, a:hover, a:active{
+    text-decoration: none;
+}
+
+ /*navbar*/
+ .navbar {
+    width: 100%;
+    padding: 8px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    left: 0;
+    z-index: 1;
+    top:0;
+    left: 0;
+    position: fixed;  
+}
+.navbar p{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-btn{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 5%;
+}
+
+.nav-btn:hover{
+    border-bottom: 1px solid white;
+    color: rgb(0, 0, 0);
+}
+
+.main{
+    margin-top: 60px;
+    width: 70%;
+    /*border: 1px solid;*/
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.activity-card{
+    margin: 20px;
+    padding: 20px;
+    width: 90%;
+    height: 600px;
+    /*border: 1px solid;*/
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    
+}
+.activity-card:hover {
+    background: rgb(44, 44, 44) url("links/Activity-Snap/WHA/WHA1_bg.PNG");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.activity-card:hover:nth-child(2){
+    background: rgb(44, 44, 44) url("links/Activity-Snap/WHA/WHA2_bg.PNG");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.activity-card:hover:nth-child(3){
+    background: rgb(44, 44, 44) url("links/Activity-Snap/WHA/WHA3_bg.PNG");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.activity-card:hover:nth-child(4){
+    background: rgb(44, 44, 44) url("links/Activity-Snap/WHA/WHA4_bg.PNG");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.activity-card:hover .activity-description{
+    color: white;
+}
+
+.activity-image{
+    width: 700px;
+    height: 300px;
+    margin: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    overflow: hidden;
+}
+.activity-image img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.tooltip{
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(0, 0, 0); 
+    border-radius: 5px; 
+    color: white;
+    padding: 4px;
+}
+.activity-image:hover img{
+    opacity: 50%;
+}
+.activity-image:hover .tooltip{
+    visibility: visible;
+}
+
+.activity-description{
+    width: 30%;
+    height: 300px;
+    padding:5px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    text-shadow: 2px white;
+}
+
+.activity-description p{
+    text-align: justify;
+}
+.activity-description a{
+    color: lightgreen;
+}

@@ -1,0 +1,31 @@
+#home-section .container {
+  padding-top: 75px;
+}
+
+#home-section {
+  background: url('img/berserk.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  
+}
+
+#home-section .__dark_overlay {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#home-section .bi-check-lg::before {
+  background: #fff;
+  font-size: 48px;
+  border-radius: 5px;
+  margin: 0 30px;
+}
+
+#explore-and-connect-section .bi-check-lg::before {
+  background: #333;
+  font-size: 48px;
+  border-radius: 5px;
+  margin: 0 30px;
+}
+
